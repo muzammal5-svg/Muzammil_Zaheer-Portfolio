@@ -6,6 +6,9 @@ import { ArrowRight, Code, ShoppingCart, Store, Zap, Sparkles, CheckCircle, Awar
 import Link from "next/link"
 import { motion } from "framer-motion"
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic'
+
 export default function ServicesPage() {
   const services = [
     {
