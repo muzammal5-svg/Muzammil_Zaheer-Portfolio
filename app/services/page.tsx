@@ -1,9 +1,8 @@
 "use client"
 
-
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { ArrowRight, Code, ShoppingCart, Palette, Store, Zap, Sparkles, CheckCircle, Award } from "lucide-react"
+import { ArrowRight, Code, ShoppingCart, Store, Zap, Sparkles, CheckCircle, Award } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -132,7 +131,7 @@ export default function ServicesPage() {
             >
               <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass border border-white/20 mb-8">
                 <Award className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium text-white">Our Expertise</span>
+                <span className="text-sm font-medium text-white">My Expertise</span>
               </div>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -140,7 +139,7 @@ export default function ServicesPage() {
                 <span className="text-gradient">Perfect Service</span>
               </h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-                Each service is crafted with precision and delivered with excellence. Explore our comprehensive range of web development solutions.
+                Each service is crafted with precision and delivered with excellence. Explore my comprehensive range of web development solutions.
               </p>
             </motion.div>
 
@@ -202,74 +201,6 @@ export default function ServicesPage() {
                               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                             </Button>
                           </Link>
-                        </div>
-                      </div>
-                    </Card>
-                  </motion.div>
-                )
-              })}
-            </div>
-
-            {/* Frontend Development - Full Width */}
-            <div className="max-w-5xl mx-auto">
-              {services.slice(4).map((service, index) => {
-                const Icon = service.icon
-                return (
-                  <motion.div
-                    key={index + 4}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    viewport={{ once: true }}
-                    className="group"
-                  >
-                    <Card className="glass-card border-white/10 hover-lift transition-all duration-500 overflow-hidden">
-                      <div className="p-8">
-                        <div className="grid md:grid-cols-2 gap-8 items-center">
-                          <div>
-                            {/* Service Icon */}
-                            <div className="mb-6">
-                              <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl ${service.bgColor} border ${service.borderColor}`}>
-                                <Icon className={`h-8 w-8 ${service.color}`} />
-                              </div>
-                            </div>
-
-                            {/* Service Content */}
-                            <div className="space-y-4">
-                              <div className="flex items-center justify-between">
-                                <h3 className="text-2xl font-bold text-white group-hover:text-primary transition-colors">
-                                  {service.title}
-                                </h3>
-                                <span className={`text-sm font-semibold ${service.color}`}>
-                                  {service.price}
-                                </span>
-                              </div>
-                              
-                              <p className="text-gray-400 leading-relaxed">
-                                {service.description}
-                              </p>
-                            </div>
-                          </div>
-
-                          <div>
-                            {/* Features List */}
-                            <ul className="space-y-3 mb-6">
-                              {service.features.map((feature, featureIndex) => (
-                                <li key={featureIndex} className="flex items-center gap-3">
-                                  <CheckCircle className={`w-4 h-4 ${service.color}`} />
-                                  <span className="text-gray-300">{feature}</span>
-                                </li>
-                              ))}
-                            </ul>
-
-                            {/* CTA Button */}
-                            <Link href={service.href}>
-                              <Button className="bg-gradient-blue hover:bg-gradient-purple text-white font-semibold px-6 py-3 rounded-xl transition-all duration-300">
-                                <span>Learn More</span>
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                              </Button>
-                            </Link>
-                          </div>
                         </div>
                       </div>
                     </Card>
