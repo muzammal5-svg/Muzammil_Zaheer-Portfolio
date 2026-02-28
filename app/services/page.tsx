@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ArrowRight, Code, ShoppingCart, Palette, Store, Zap, Sparkles, CheckCircle, Award } from "lucide-react"
