@@ -132,10 +132,10 @@ export function WhatsAppFloat({
                   stiffness: 300,
                   damping: 30
                 }}
-                className="absolute bottom-0 right-full mr-4 pointer-events-none"
+                className="absolute bottom-0 right-full mr-2 sm:mr-4 pointer-events-none hidden sm:block"
               >
-                <div className="relative max-w-xs rounded-2xl glass border border-white/20 p-4 text-sm text-white shadow-xl backdrop-blur-sm">
-                  <div className="flex items-start gap-3">
+                <div className="relative max-w-[200px] sm:max-w-xs rounded-2xl glass border border-white/20 p-3 sm:p-4 text-xs sm:text-sm text-white shadow-xl backdrop-blur-sm">
+                  <div className="flex items-start gap-2 sm:gap-3">
                     <div className="flex-shrink-0">
                       <motion.div 
                         animate={{ 
@@ -146,7 +146,7 @@ export function WhatsAppFloat({
                           repeat: Infinity,
                           ease: "easeInOut"
                         }}
-                        className="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center p-1"
+                        className="h-6 w-6 sm:h-8 sm:w-8 rounded-full bg-white/10 flex items-center justify-center p-1"
                       >
                         <img 
                           src="/MZwebsolution.png" 
@@ -156,28 +156,29 @@ export function WhatsAppFloat({
                       </motion.div>
                     </div>
                     <div className="flex-1">
-                      <div className="font-medium text-primary mb-1">MZwebSolutions</div>
+                      <div className="font-medium text-primary mb-1 text-xs sm:text-sm">MZwebSolutions</div>
                       <motion.div 
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
-                        className="text-gray-300 leading-relaxed"
+                        className="text-gray-300 leading-relaxed text-xs sm:text-sm"
                       >
-                        👋 Hi! Need help with web development? Let's chat!
+                        👋 Hi! Need help?
                       </motion.div>
                       <motion.div 
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.6 }}
-                        className="text-xs text-gray-400 mt-2 flex items-center gap-1"
+                        className="text-[10px] sm:text-xs text-gray-400 mt-1 sm:mt-2 flex items-center gap-1"
                       >
                         <div className="w-1 h-1 bg-green-400 rounded-full animate-pulse"></div>
-                        Typically replies instantly
+                        <span className="hidden sm:inline">Typically replies instantly</span>
+                        <span className="sm:hidden">Online</span>
                       </motion.div>
                     </div>
                   </div>
                   {/* Arrow */}
-                  <div className="absolute top-6 left-full">
+                  <div className="absolute top-6 left-full hidden sm:block">
                     <div className="border-8 border-transparent border-l-white/20"></div>
                   </div>
                   
@@ -189,7 +190,7 @@ export function WhatsAppFloat({
                     }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="absolute -top-2 -right-2 w-6 h-6 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center justify-center text-white text-xs transition-colors pointer-events-auto"
+                    className="absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-5 h-5 sm:w-6 sm:h-6 bg-gray-600 hover:bg-gray-500 rounded-full flex items-center justify-center text-white text-xs transition-colors pointer-events-auto"
                   >
                     ×
                   </motion.button>

@@ -25,12 +25,12 @@ export function MZwebSolutionsHero() {
       <div className="container mx-auto px-6 sm:px-8 lg:px-16 relative z-10 py-20 lg:py-14">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center max-w-7xl mx-auto">
           
-          {/* Left Column - Content */}
+          {/* Left Column - Content (Shows FIRST on mobile and desktop) */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-12"
+            className="space-y-12 order-1"
           >
             {/* Badge */}
             {/* <motion.div
@@ -176,12 +176,12 @@ export function MZwebSolutionsHero() {
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Image */}
+          {/* Right Column - Image (Shows SECOND on mobile and desktop) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative lg:order-last order-first"
+            className="relative order-2"
           >
             <div className="relative aspect-[3/4] max-w-lg mx-auto">
               {/* Glow Effect */}

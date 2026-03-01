@@ -37,6 +37,11 @@ body {
   color: hsl(var(--foreground));
   background: hsl(var(--background));
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .glass {
