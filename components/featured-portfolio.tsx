@@ -318,7 +318,7 @@ export function FeaturedPortfolio() {
                   </div>
 
                   {/* Trust Indicators */}
-                  <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/10">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-white/10">
                     <div className="text-center">
                       <div className="text-2xl font-bold text-primary mb-1">50+</div>
                       <div className="text-sm text-gray-400">Projects Completed</div>

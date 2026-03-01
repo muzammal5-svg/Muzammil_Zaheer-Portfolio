@@ -171,7 +171,7 @@ export default function WordPressPage() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-blue-400">20+</div>
                     <div className="text-sm text-gray-400">WordPress Sites</div>

@@ -171,7 +171,7 @@ export default function ShopifyPage() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-purple-400">15+</div>
                     <div className="text-sm text-gray-400">Shopify Stores</div>

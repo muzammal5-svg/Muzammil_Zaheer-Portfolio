@@ -171,7 +171,7 @@ export default function FrontendPage() {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-green-400">30+</div>
                     <div className="text-sm text-gray-400">React Apps</div>
